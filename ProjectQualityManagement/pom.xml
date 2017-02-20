@@ -65,13 +65,13 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.15</version>
         </dependency>
-        <!-- spring-boot-devtools依赖包(热部署) -->
-        <dependency>
+        <!-- spring-boot-devtools依赖包(热部署)，idea无法自动编译springboot项目，所以无效 -->
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
             <scope>true</scope>
-        </dependency>
+        </dependency>-->
         <!-- freemarker模版引擎 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -106,15 +106,15 @@
     <!--构建节点-->
     <build>
         <plugins>
-            <!-- 这是spring-boot-devtools plugin -->
+            <!--&lt;!&ndash; 这是spring-boot-devtools plugin idea无法自动编译springboot项目，所以无效 &ndash;&gt;
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <!--fork : 如果没有该项配置，肯呢个devtools不会起作用，即应用不会restart -->
+                    &lt;!&ndash;fork : 如果没有该项配置，肯呢个devtools不会起作用，即应用不会restart &ndash;&gt;
                     <fork>true</fork>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <!--jetty 插件，mvn jetty:run -->
             <!--<plugin>-->
