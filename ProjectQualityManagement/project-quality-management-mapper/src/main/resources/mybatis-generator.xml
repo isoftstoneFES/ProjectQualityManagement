@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+		PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<context id="mybatis-demo" targetRuntime="MyBatis3" >
+		<!--&lt;!&ndash; 根据需要自行选择插件 &ndash;&gt;-->
+		<!--<plugin type="com.letvcloud.saas.tool.plugin.LastInsertIdPlugin"></plugin>-->
+		<!--<plugin type="com.letvcloud.saas.tool.plugin.MySqlLimitPlugin"></plugin>-->
+		<!--<commentGenerator>-->
+			<!--<property name="suppressAllComments" value="true"/>-->
+		<!--</commentGenerator>-->
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+						connectionURL="jdbc:mysql://localhost:3306/pqm?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull"
+						userId="root"
+						password="root">
+		</jdbcConnection>
+
+		<javaModelGenerator targetPackage="com.isoftstone.pqm.model"
+							targetProject="src/main/java">
+			<property name="enableSubPackages" value="true"/>
+			<property name="trimStrings" value="true"/>
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="mapper"
+						 targetProject="src/main/resources">
+			<property name="enableSubPackages" value="true"/>
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="MIXEDMAPPER" targetPackage="com.isoftstone.pqm.mapper"
+							 targetProject="src/main/java">
+			<property name="enableSubPackages" value="true"/>
+		</javaClientGenerator>
+
+
+		<!--<table tableName="user_baseinfo" schema="saas_uc"></table>-->
+		<!--<table tableName="audit_ban_comments" schema="saas_uc"></table>-->
+		<!--<table tableName="audit_comment_blockip" schema="saas_uc"></table>-->
+		<!--<table tableName="audit_comment_control" schema="saas_uc"></table>-->
+		<!--<table tableName="audit_comment_keywords" schema="saas_uc"></table>-->
+        <!--<table tableName="user_login_log" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="user_photo_log" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="uc_area" schema="saas_uc"></table>-->
+
+        <!--<table tableName="audit_ban_dm" schema="saas_uc"></table>-->
+        <!--<table tableName="audit_dm_blockip" schema="saas_uc"></table>-->
+        <!--<table tableName="audit_dm_control" schema="saas_uc"></table>-->
+        <!--<table tableName="audit_dm_keywords" schema="saas_uc"></table>-->
+
+        <!--<table tableName="favorite_list" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+
+        <!--<table tableName="play_recond" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+
+        <!--<table tableName="user_feedback" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="album_praise_data" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="video_praise_data" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="discuss_praise_data" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="user_statistics_data" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+
+        <!--<table tableName="live_praise_data" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="anchor_apply" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="anchor" schema="saas_uc"></table>-->
+        <!--<table tableName="anchor_live_detail" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+        <!--<table tableName="anchor_config" schema="saas_uc">-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
+        <!--</table>-->
+	</context>
+</generatorConfiguration>

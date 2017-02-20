@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="true" /> <!-- 默认即true -->
+		<setting name="lazyLoadingEnabled" value="false" /><!-- 默认即false -->
+		<setting name="logPrefix" value="MYBATIS." /> <!-- 此配置需要mybatis3.2.*及以后 -->
+		<setting name="defaultExecutorType" value="REUSE" /> <!-- REUSE 执行器会重用预处理语句（prepared statements） -->
+		<setting name="defaultStatementTimeout" value="2" /> <!-- 超时时间:2秒 -->
+	</settings>
+</configuration> 
